@@ -111,7 +111,7 @@ hr{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 70px 75px 81px;
+    padding: 40px 75px 81px;
 }
 
 .hero-btn{
@@ -394,7 +394,26 @@ footer {
 #hide{
     display: none;
 }
+.batch{
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 250px;
+}
+.batch button {
+    background-color: #00FF88;
+    border-radius: 100px;
+    border: none;
+    font-size: 18px;
+    padding: 8px 16px;
 
+}
+
+
+/* Mobile Responsive */
+ 
 @media screen and (max-width:576px) {
     .about-1 {
     padding-top: 40px;
@@ -521,7 +540,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 100px 75px 81px;
+    padding: 40px 75px 81px;
 }
 
 .hero-section h1 {
@@ -551,4 +570,17 @@ nav{
     padding: 20px;
 }
 
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .video-card {
+    /* display: flex; */
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 24px 0px;
+    align-items: center;
+    justify-content: center;
+}
+    
 }
