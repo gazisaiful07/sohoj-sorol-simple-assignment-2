@@ -38,14 +38,17 @@ p{
 }
 
 header{
-background-color: #1A0B2E;
+ background-color: #1A0B2E;
 display: flex;
 }
 nav{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    /* border: 1px solid red; */ 
 }
 .navbar{
+   
     display: flex;
     width: 1200px;
     /* border: 1px solid red; */
@@ -80,6 +83,10 @@ hr{
     color: white;
     font-size: 60px;
     font-weight: 800;
+}
+
+.hamburger-menu{
+    display: none;
 }
 /* p{
     color: white;
@@ -393,4 +400,6 @@ footer {
 .footer-menu p{
     text-align: center;
 }
-
+#hide{
+    /* display: none; */
+}
