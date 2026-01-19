@@ -143,5 +143,71 @@ text-align: center;
     font-weight: 900;
 }
 
+.quality-section{
+    background-color: #230E3D;
+}
+.quality {
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.quality h3 {
+    padding-top: 120px;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+.quality-card{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card-headline {
+    color: white;
+    font-size: 24;
+    font-weight: bold;
+}
+
+.headphone{
+    /* border: 1px solid white; */
+    border:none;
+    grid-row: 2 span;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 107px 40px;
+
+}
+.device{
+    /* border: 1px solid red; */
+    border:none;
+    grid-column: 2 span;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+}
+.location {
+    /* border: 1px solid red; */
+    border:none;
+    grid-column: 2 span;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+.zap {
+    /* border: 1px solid red; */
+    border:none;
+    grid-column: 2 span;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+.resorce {
+    /* border: 1px solid red; */
+    border:none;
+    grid-column: 1 span;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
 
