@@ -6,12 +6,42 @@
 .font-family{
   font-family: "Inter", sans-serif;
 }
+
+/* Shared Design */
+p{
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff9d;
+}
+.btn{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 13px 16px;
+    border-radius: 100px;
+    background-image: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
+}
+.btn:hover{
+    border: 1px solid #00FF88;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 100px;
+    color: #00FF88;
+    background-image: none;
+
+}
+
 header{
 background-color: #1A0B2E;
 display: flex;
 }
 nav{
     margin: 0 auto;
+    /* border: 1px solid red; */
 }
 .navbar{
     display: flex;
@@ -29,16 +59,6 @@ nav{
     text-decoration: none;
     color: white;
 }
-
-.btn{
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    padding: 13px 16px;
-    border-radius: 100px;
-    background-image: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
-}
 hr{
     border: none;
     height: 1px;
@@ -47,6 +67,9 @@ hr{
 .hero-section{
     background-image: url(./assets/hero-bg.png);
     padding-top: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .hero-section h1 {
@@ -56,17 +79,18 @@ hr{
     font-size: 60px;
     font-weight: 800;
 }
-p{
+/* p{
     color: white;
     text-align: center;
     font-size: 16px;
     margin: 8px;
-}
+} */
 
 .circle-image{
     background-image: url(./assets/hero-circle.png);
     background-position: center;
     background-repeat: no-repeat;
+    
     /* background-size: 350px; */
     /* display: flex; */
     /* justify-content: center; */
@@ -118,6 +142,7 @@ p{
     text-align: center;
     margin-bottom: 40px;
     line-height: 20px;
+    color: #ffffff;
     
 }
 .last-para{
@@ -125,6 +150,7 @@ text-align: center;
     margin-bottom: 40px;
     line-height: 20px;
     margin-bottom: 80px;
+    color: #ffffff;
 }
 .about-main{
     padding-bottom: 120px;
@@ -151,8 +177,7 @@ text-align: center;
     width: 1200px;
     margin: 0 auto;
 }
-
-.quality h3 {
+h3 {
     text-align: center;
     font-size: 48px;
     color: white;
@@ -220,10 +245,117 @@ text-align: center;
     margin-bottom: 16px;
 }
 
-.headphone p, .device p, .location p, .zap p, .resorce p{
-    text-align: left;
-    margin: 0;
+.featured{
+    background-color: #1A0B2E;
+    padding: 120px 0;
+    
+}
+.episode {
+    width: 1200px;
+    margin: 0 auto;
+    /* padding: 120px 0px; */
+
+}
+.video-card {
+    display: flex;
+    /* border: 1px solid red; */
+    gap: 30px;
+    margin-top: 40px;
+}
+.box{
+    background-color: #250D44;
+    width: 380px;
+    border-radius: 20px;
+}
+iframe{
+    border-radius: 20px 20px 0px 0px
+}
+.box h4{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 24px;
+}
+.box p{
+    margin: 0 24px 12px;
+    
+}
+.timer{
+    color: #00FF88;
+    padding-bottom: 24px;
+}
+.host-intro{
+    padding-top: 120px;
+}
+.host-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    width: 1200px;
+    margin: 40px auto 0px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    border: none;
+    border-radius: 40px ;
+}
+.host-image {
+    width: 200px;
+}
+h5 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.host-identity p {
+    margin-bottom: 16px;
+}
+.social-media{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.icon-box{
+    border: 1px solid #533C72;
+    border-radius: 100%;
+}
+.icon-box img {
+    /* width: 35px; */
+    padding: 10px;
+    align-items: center;
+}
+
+footer {
+    background-image: url(./assets/footer-bg.png);
+    padding: 120px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-menu{
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid salmon; */
+}
+.footer-logo{
+    text-align: center;
+    margin-bottom: 32px ;
+}
+.footer-logo img{
+    width: 410px;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.footer-social p{
     font-size: 16px;
-    line-height: 24px;
-    color: #ffffff9d;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer-menu p{
+    text-align: center;
 }
