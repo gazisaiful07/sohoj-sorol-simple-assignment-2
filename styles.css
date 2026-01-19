@@ -40,21 +40,17 @@ p{
 header{
  background-color: #1A0B2E;
 display: flex;
+/* max-width: 1200px;
+border: 1px solid red; */
+
 }
-nav{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    /* border: 1px solid red; */ 
-}
-.navbar{
-   
-    display: flex;
+nav {
     width: 1200px;
-    /* border: 1px solid red; */
-    justify-content: space-around;
-    padding: 30px 0px;
-    align-items: center;
+    /* border: 1px solid #00FF88; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
 }
 .logo{
     width: 219px;
@@ -146,7 +142,7 @@ hr{
     background-color: #1A0B2E;
 }
 .about-1{
-    width: 1200px;
+    max-width: 1200px;
     text-align: center;
     color: white;
     margin: 0 auto;
@@ -165,19 +161,12 @@ hr{
     color: #ffffff;
     
 }
-.last-para{
-text-align: center;
-    margin-bottom: 40px;
-    line-height: 20px;
-    margin-bottom: 80px;
-    color: #ffffff;
-}
 .about-main{
     padding-bottom: 120px;
 }
 .about-2{
     /* border: 1px solid red; */
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -194,7 +183,7 @@ text-align: center;
     padding: 120px 0px;
 }
 .quality {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 h3 {
@@ -205,7 +194,7 @@ h3 {
 }
 
 .quality-card{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -292,7 +281,7 @@ h3 {
     
 }
 .episode {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     /* padding: 120px 0px; */
 
@@ -330,7 +319,7 @@ iframe{
 }
 .host-card{
     background-color: rgba(53, 17, 101, 0.4);
-    width: 1200px;
+    max-width: 1200px;
     margin: 40px auto 0px;
     display: flex;
     align-items: center;
@@ -374,7 +363,7 @@ footer {
     background-size: cover;
 }
 .footer-menu{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid salmon; */
 }
@@ -401,5 +390,163 @@ footer {
     text-align: center;
 }
 #hide{
-    /* display: none; */
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .about-1 {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+    .about-1 h2{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .first-para {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px;
+}
+.about-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    text-align: center;
+
+}
+.about-2 p{
+    text-align: center;
+    margin-top: 16px;
+}
+
+.quality-section {
+    padding: 40px 0px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.quality-card {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.headphone, .location, .device, .zap, .resorce {
+    border:none;
+    border-radius: 20px;
+    padding: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.featured {
+    padding: 40px 0;
+}
+.video-card {
+    /* display: flex; */
+    /* border: 1px solid red; */
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    align-items: center;
+}
+.host-intro {
+    padding-top: 60px;
+}
+.host-card {
+    margin: 24px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.host-identity p {
+    margin-bottom: 16px;
+    text-align: center;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+footer {
+    padding: 40px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-logo img {
+    max-width: 219px;
+}
+.icon-align{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #00FF88; */
+}
+
+.footer-social {
+    width: 255px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 10px;
+    /* border: 1px solid red; */
+}
+.footer-social p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    margin-top: 24px;
+}
+.circle-image {
+    background-image: url(./assets/hero-circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.microphone {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 100px 75px 81px;
+}
+
+.hero-section h1 {
+    margin-top: 24px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+.btn-outline{
+    margin-bottom: 40px;
+    
+}
+
+
+.menu{
+    display: none;
+}
+#nav-btn{
+    display: none;
+}
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 20px;
+}
+
 }
